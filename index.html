@@ -31,7 +31,7 @@
 						<a class="nav-link" href="#certificates">Certificates</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#projects">Certificates</a>
+						<a class="nav-link" href="#projects">Projects</a>
 					</li>
 				</ul>
 			</div>
@@ -52,17 +52,17 @@
                             <a href="#about" class="text-decoration-none">
                                 <button type="button" class="btn btn-lv mt-3">About Me</i></button>
                             </a>
-                            <a href="mailto:arif@gmail.com" class="text-decoration-none">
+                            <a href="mailto:ariffajarrizky2@gmail.com" class="text-decoration-none">
                                 <button type="button" class="btn btn-lv-outline mt-3">Contact Me <i class='bx bx-right-arrow-alt'></i></button>
                             </a>
                             <div id="sosmed" class="fs-1 mt-2">
                                 <a href="https://www.instagram.com/" title="My Instagram" class="text-decoration-none textLV">
                                     <i class="bx bxl-instagram"></i>
                                 </a>
-                                <a href="https://www.instagram.com/" title="My Instagram" class="text-decoration-none textLV">
+                                <a href="#" title="My Instagram" class="text-decoration-none textLV">
                                     <i class="bx bxl-linkedin"></i>
                                 </a>
-                                <a href="https://www.instagram.com/" title="My Instagram" class="text-decoration-none textLV">
+                                <a href="mailto:ariffajarrizky2@gmail.com" title="My Instagram" class="text-decoration-none textLV">
                                     <i class="bx bxl-gmail"></i>
                                 </a>
                             </div>
@@ -94,7 +94,7 @@
                 <div class="col-md-6 col-lg-6 text-dark d-flex flex-column align-items-center mt-md-0 mt-lg-0 mt-5">
                     <h3>Who i am?</h3>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim possimus, voluptatibus fugit, inventore quasi suscipit blanditiis voluptates perferendis, aperiam et placeat fugiat velit cumque a est quo dolore animi consequuntur?
+                        Saya lulusan dari SMK Negeri 1 Cianjur jurusan Teknik Komputer dan Jaringan yang selalu kreatif dalam menemukan penyelesaian masalah. Saya memiliki jiwa kepemimpinan dan juga aktif dalam berorganisasi sering berpartisipasi dalam acara acara produktif.
                     </p>
                     <div class="about-btns mt-lg-5 mt-md-5 mt-2 d-flex">
                         <a href="https://drive.google.com/file/d/1-szb-neH_5W3WjZQkwrwwaPEtJRcPxnS/view?usp=share_link">
@@ -308,7 +308,50 @@
     </section>
     <!-- End Projects Section -->
 
+    <!-- Start Contact Section -->
+    <section class="container-fluid bgGray rounded-3 py-5" id="contact">
+        <div class="container">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="row">
+                    <h3 class="fw-bold ">Contact Me:</h3>
+                </div>
+                <div class="bg-white p-4 rounded-3 shadow">
+                    <form class="row" id="messageForm">
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Subjek Pesan">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Tuliskan pesan anda"></textarea>
+                        </div>                
+                        <div class="d-flex justify-content-center">
+                            <button type="button" id="sendVisitorMessage" class="btn btn-primary">Kirim <i class="bx bx-paper-plane"></i></button>
+                        </div>
+                    </form>                            
+                    <hr>
+                    <div class="d-flex align-items-center flex-column">
+                        <p>Or Contact me in:</p>
+                        <span class="d-flex fs-2 text-primary text-decoration-none">
+                            <a href="https://instagram.com/">
+                                <i class="bx bxl-instagram"></i>
+                            </a>
+                            <a href="https://linkdein.com/">
+                                <i class="bx bxl-linkedin"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Section -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>    
+    <script>
+        $('#sendVisitorMessage').click(e => {    
+            location.href = 'mailto:ariffajarrizky2@gmail.com?subject='+$('#subject').val()+'&body='+$('#message').val();
+        });
+    </script>
 </body>
 </html>
